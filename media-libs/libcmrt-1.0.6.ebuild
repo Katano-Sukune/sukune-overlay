@@ -1,11 +1,6 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-# The EAPI variable tells the ebuild format in use.
-# It is suggested that you use the latest EAPI approved by the Council.
-# The PMS contains specifications for all EAPIs. Eclasses will test for this
-# variable if they need to use features that are not universal in all EAPIs.
-# If an eclass doesn't support latest EAPI, use the previous EAPI instead.
 EAPI=7
 
 
