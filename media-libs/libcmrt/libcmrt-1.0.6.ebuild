@@ -36,26 +36,11 @@ KEYWORDS="~amd64"
 # for details.  Usually not needed.
 #RESTRICT="strip"
 
+RDEPEND="x11-libs/libdrm"
 
-# Run-time dependencies. Must be defined to whatever this depends on to run.
-# Example:
-#    ssl? ( >=dev-libs/openssl-1.0.2q:0= )
-#    >=dev-lang/perl-5.24.3-r1
-# It is advisable to use the >= syntax show above, to reflect what you
-# had installed on your system when you tested the package.  Then
-# other users hopefully won't be caught without the right version of
-# a dependency.
-#RDEPEND=""
-
-# Build-time dependencies that need to be binary compatible with the system
-# being built (CHOST). These include libraries that we link against.
-# The below is valid if the same run-time depends are required to compile.
-#DEPEND="${RDEPEND}"
-
-# Build-time dependencies that are executed during the emerge process, and
-# only need to be present in the native build system (CBUILD). Example:
-#BDEPEND="virtual/pkgconfig"
-
+DEPEND="${RDEPEND}
+	x11-libs/libva
+	virtual/pkgconfig"
 
 # The following src_configure function is implemented as default by portage, so
 # you only need to call it if you need a different behaviour.
