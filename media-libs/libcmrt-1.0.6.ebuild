@@ -12,8 +12,7 @@ inherit autotools
 # Eclasses tend to list descriptions of how to use their functions properly.
 # Take a look at the eclass/ directory for more examples.
 
-# Short one-line description of this package.
-DESCRIPTION="This is a sample skeleton ebuild file"
+DESCRIPTION="C for Media Runtime"
 
 # Homepage, not used by Portage directly but handy for developer reference
 HOMEPAGE="https://foo.example.org/"
