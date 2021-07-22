@@ -16,9 +16,8 @@ DESCRIPTION="C for Media Runtime"
 
 HOMEPAGE="https://github.com/intel/cmrt"
 
-# Point to any required sources; these will be automatically downloaded by
-# Portage.
-SRC_URI="ftp://foo.example.org/${P}.tar.gz"
+PKGVAR=1.0.6
+SRC_URI="https://github.com/01org/cmrt/archive/${PKGVAR}.tar.gz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
