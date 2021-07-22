@@ -27,17 +27,6 @@ SRC_URI="https://github.com/01org/cmrt/archive/${PKGVAR}.tar.gz"
 
 LICENSE="MIT"
 
-# The SLOT variable is used to tell Portage if it's OK to keep multiple
-# versions of the same package installed at the same time.  For example,
-# if we have a libfoo-1.2.2 and libfoo-1.3.2 (which is not compatible
-# with 1.2.2), it would be optimal to instruct Portage to not remove
-# libfoo-1.2.2 if we decide to upgrade to libfoo-1.3.2.  To do this,
-# we specify SLOT="1.2" in libfoo-1.2.2 and SLOT="1.3" in libfoo-1.3.2.
-# emerge clean understands SLOTs, and will keep the most recent version
-# of each SLOT and remove everything else.
-# Note that normal applications should use SLOT="0" if possible, since
-# there should only be exactly one version installed at a time.
-# Do not use SLOT="", because the SLOT variable must not be empty.
 SLOT="0"
 
 # Using KEYWORDS, we can record masking information *inside* an ebuild
