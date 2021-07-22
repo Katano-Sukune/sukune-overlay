@@ -1,11 +1,6 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-# NOTE: The comments in this file are for instruction and documentation.
-# They're not meant to appear with your final, production ebuild.  Please
-# remember to remove them before submitting or committing your ebuild.  That
-# doesn't mean you can't add your own comments though.
-
 # The EAPI variable tells the ebuild format in use.
 # It is suggested that you use the latest EAPI approved by the Council.
 # The PMS contains specifications for all EAPIs. Eclasses will test for this
