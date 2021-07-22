@@ -29,22 +29,6 @@ LICENSE="MIT"
 
 SLOT="0"
 
-# Using KEYWORDS, we can record masking information *inside* an ebuild
-# instead of relying on an external package.mask file.  Right now, you
-# should set the KEYWORDS variable for every ebuild so that it contains
-# the names of all the architectures with which the ebuild works.
-# All of the official architectures can be found in the arch.list file
-# which is in the profiles/ directory.  Usually you should just set this
-# to "~amd64".  The ~ in front of the architecture indicates that the
-# package is new and should be considered unstable until testing proves
-# its stability.  So, if you've confirmed that your ebuild works on
-# amd64 and ppc, you'd specify:
-# KEYWORDS="~amd64 ~ppc"
-# Once packages go stable, the ~ prefix is removed.
-# For binary packages, use -* and then list the archs the bin package
-# exists for.  If the package was for an x86 binary package, then
-# KEYWORDS would be set like this: KEYWORDS="-* x86"
-# Do not use KEYWORDS="*"; this is not valid in an ebuild context.
 KEYWORDS="~amd64"
 
 # Comprehensive list of any and all USE flags leveraged in the ebuild,
