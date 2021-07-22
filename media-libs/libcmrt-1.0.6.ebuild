@@ -14,8 +14,7 @@ inherit autotools
 
 DESCRIPTION="C for Media Runtime"
 
-# Homepage, not used by Portage directly but handy for developer reference
-HOMEPAGE="https://foo.example.org/"
+HOMEPAGE="https://github.com/intel/cmrt"
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
