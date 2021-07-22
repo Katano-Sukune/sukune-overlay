@@ -26,11 +26,7 @@ SRC_URI="ftp://foo.example.org/${P}.tar.gz"
 # to keep it tidy.
 #S="${WORKDIR}/${P}"
 
-
-# License of the package.  This must match the name of file(s) in the
-# licenses/ directory.  For complex license combination see the developer
-# docs on gentoo.org for details.
-LICENSE=""
+LICENSE="MIT"
 
 # The SLOT variable is used to tell Portage if it's OK to keep multiple
 # versions of the same package installed at the same time.  For example,
